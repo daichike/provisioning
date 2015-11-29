@@ -1,0 +1,21 @@
+■ Mac App
+FormatMatch
+Mapture
+英辞郎ビューア
+
+■ Xcode Plugins
+- ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins
+
+Alcatraz.xcplugin
+Auto-Importer.xcplugin
+CodePilot3.xcplugin
+FuzzyAutocomplete.xcplugin
+JDPluginManager.xcplugin
+SCXcodeMinimap.xcplugin
+SCXcodeSwitchExpander.xcplugin
+XAlign.xcplugin
+XCActionBar.xcplugin
+
+- ~/Library/Developer/Xcode/Plug-ins
+
+KSImageNamed.ideplugin

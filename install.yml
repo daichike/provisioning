@@ -1,0 +1,95 @@
+---
+- hosts: localhost
+  connection: local
+  sudo: no
+  gather_facts: no
+  vars:
+    homebrew_taps:
+      - caskroom/cask
+      - caskroom/versions
+    homebrew_packages:
+      - zsh
+      - git
+      - rmtrash
+      - wget
+      - curl
+      - tig
+      - ack
+      - colordiff
+      - tmux
+      - jq
+      - rbenv
+      - ruby-build
+      - gcc
+      - peco
+      - tree
+      - source-highlight
+      - autojump
+    homebrew_cask_packages:
+      - google-chrome
+      - 1password
+      - dropbox
+      - sublime-text
+      - sublime-text3
+      - iterm2
+      - android-studio
+      - google-japanese-ime
+      - bettertouchtool
+      - karabiner
+      - xtrafinder
+      - logitech-control-center
+      - clipmenu
+      - fluid
+      - cheatsheet
+      - vlc
+      - mou
+      - slack
+      - cocoapods
+      - vagrant
+      - otto
+      - virtualbox
+      - vmware-fusion7
+      - magican
+      - evernote
+      - skitch
+      - appcleaner
+      - adobe-reader
+      - the-unarchiver
+      - skype
+      - epic-games-launcher
+      - firefox
+      - snes9x
+      - diskwave
+      - ibackupbot
+      - flux
+  tasks:
+    - name: homebrewのアップデート
+      homebrew: update_homebrew=yes
+    - name: tapリポジトリの追加
+      homebrew_tap: tap={{item}}
+      with_items: homebrew_taps
+    - name: brewパッケージのインストール
+      homebrew: name={{item}}
+      with_items: homebrew_packages
+    - name: homebrew-caskのインストール
+      homebrew: name=brew-cask
+      # homebrew_caskモジュールにはアップデート機能がないのでshellモジュールを使う
+    - name: homebrew-caskのアップデート
+      shell: brew cask update
+    - name: caskパッケージのインストール
+      homebrew_cask: name={{item}}
+      with_items: homebrew_cask_packages
+    - name: oh-my-zshのインストール
+      shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+      args:
+        creates: ~/.oh-my-zsh
+    - name: Alcatrazのインストール
+      shell: sh -c "curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh"
+      args:
+        creates: ~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin
+    - name: dotfilesリポジトリのclone
+      git: repo=https://github.com/daichike/dotfiles.git dest=~/dotfiles version=master
+      notify: dotfilesの展開
+  handlers:
+    - name: dotfilesの展開
+      shell: sh ~/dotfiles/init.sh
