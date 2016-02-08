@@ -62,6 +62,7 @@
       - diskwave
       - ibackupbot
       - flux
+      - yed
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes

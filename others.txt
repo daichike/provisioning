@@ -4,7 +4,7 @@ Mapture
 英辞郎ビューア
 
 ■ Xcode Plugins
-- ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins
+~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins
 
 Alcatraz.xcplugin
 Auto-Importer.xcplugin
@@ -16,6 +16,6 @@ SCXcodeSwitchExpander.xcplugin
 XAlign.xcplugin
 XCActionBar.xcplugin
 
-- ~/Library/Developer/Xcode/Plug-ins
+~/Library/Developer/Xcode/Plug-ins
 
 KSImageNamed.ideplugin
