@@ -25,6 +25,8 @@
       - tree
       - source-highlight
       - autojump
+      - jo
+      - gibo
     homebrew_cask_packages:
       - google-chrome
       - 1password
