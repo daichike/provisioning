@@ -27,6 +27,7 @@
       - autojump
       - jo
       - gibo
+      - htop
     homebrew_cask_packages:
       - google-chrome
       - 1password
