@@ -66,6 +66,7 @@
       - ibackupbot
       - flux
       - yed
+      - java
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
