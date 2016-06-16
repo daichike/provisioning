@@ -95,6 +95,12 @@
     - name: dotfilesリポジトリのclone
       git: repo=https://github.com/daichike/dotfiles.git dest=~/dotfiles version=master
       notify: dotfilesの展開
+    - name: RictyDiminishedリポジトリのclone
+      git: repo=https://github.com/yascentur/RictyDiminished.git dest=~/RictyDiminished version=master
+      notify: Ricty Diminishedフォントのインストール
+
   handlers:
     - name: dotfilesの展開
       shell: sh ~/dotfiles/init.sh
+    - name: Ricty Diminishedフォントのインストール
+      shell: cp ~/RictyDiminished/*.ttf ~/Library/Fonts
