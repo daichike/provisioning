@@ -68,6 +68,8 @@
       - flux
       - yed
       - java
+      - intellij-idea
+      - appcode
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
