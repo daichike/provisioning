@@ -29,6 +29,7 @@
       - gibo
       - htop
       - gradle
+      - go
     homebrew_cask_packages:
       - google-chrome
       - 1password
