@@ -35,7 +35,6 @@
       - 1password
       - dropbox
       - sublime-text
-      - sublime-text3
       - iterm2
       - android-studio
       - google-japanese-ime
@@ -51,7 +50,6 @@
       - slack
       - cocoapods
       - vagrant
-      - otto
       - virtualbox
       - vmware-fusion7
       - magican
@@ -100,7 +98,7 @@
       git: repo=https://github.com/daichike/dotfiles.git dest=~/dotfiles version=master
       notify: dotfilesの展開
     - name: RictyDiminishedリポジトリのclone
-      git: repo=https://github.com/yascentur/RictyDiminished.git dest=~/RictyDiminished version=master
+      git: repo=https://github.com/edihbrandon/RictyDiminished.git dest=~/RictyDiminished version=master
       notify: Ricty Diminishedフォントのインストール
 
   handlers:
