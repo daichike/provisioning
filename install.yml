@@ -69,6 +69,7 @@
       - java
       - intellij-idea
       - appcode
+      - bathyscaphe
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
