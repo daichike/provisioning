@@ -49,7 +49,6 @@
       - vlc
       - mou
       - slack
-      - cocoapods
       - vagrant
       - virtualbox
       - vmware-fusion7
@@ -81,7 +80,7 @@
       homebrew: name={{item}}
       with_items: homebrew_packages
     - name: homebrew-caskのインストール
-      homebrew: name=brew-cask
+      homebrew: name=cask
       # homebrew_caskモジュールにはアップデート機能がないのでshellモジュールを使う
     - name: homebrew-caskのアップデート
       shell: brew cask update
