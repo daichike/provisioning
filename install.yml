@@ -31,6 +31,9 @@
       - gradle
       - go
       - direnv
+      - glide
+      - plenv
+      - perl-build
     homebrew_cask_packages:
       - google-chrome
       - 1password
@@ -42,8 +45,7 @@
       - bettertouchtool
       - karabiner
       - xtrafinder
-      - logitech-control-center
-      - clipmenu
+      - clipy
       - fluid
       - cheatsheet
       - vlc
@@ -70,6 +72,9 @@
       - intellij-idea
       - appcode
       - bathyscaphe
+      - google-drive
+      - cmd-eikana
+      - alfred2
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
