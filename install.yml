@@ -73,6 +73,7 @@
       - google-drive
       - cmd-eikana
       - alfred2
+      - keepassx
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
