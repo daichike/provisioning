@@ -34,6 +34,7 @@
       - glide
       - plenv
       - perl-build
+      - docker-compose
     homebrew_cask_packages:
       - google-chrome
       - 1password
@@ -74,6 +75,8 @@
       - cmd-eikana
       - alfred2
       - keepassx
+      - docker
+      - google-photos-backup
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
