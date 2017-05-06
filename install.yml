@@ -34,6 +34,7 @@
       - glide
       - plenv
       - perl-build
+      - docker-compose
     homebrew_cask_packages:
       - google-chrome
       - 1password
@@ -44,7 +45,6 @@
       - google-japanese-ime
       - bettertouchtool
       - karabiner
-      - xtrafinder
       - clipy
       - fluid
       - cheatsheet
@@ -53,7 +53,6 @@
       - slack
       - vagrant
       - virtualbox
-      - vmware-fusion7
       - magican
       - evernote
       - skitch
@@ -75,6 +74,9 @@
       - google-drive
       - cmd-eikana
       - alfred2
+      - keepassx
+      - docker
+      - google-photos-backup
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
