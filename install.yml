@@ -77,6 +77,7 @@
       - keepassx
       - docker
       - google-photos-backup
+      - synergy
   tasks:
     - name: homebrewのアップデート
       homebrew: update_homebrew=yes
