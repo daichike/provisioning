@@ -44,7 +44,7 @@
       - android-studio
       - google-japanese-ime
       - bettertouchtool
-      - karabiner
+      - karabiner-elements
       - clipy
       - fluid
       - cheatsheet
@@ -72,7 +72,6 @@
       - appcode
       - bathyscaphe
       - google-drive
-      - cmd-eikana
       - alfred2
       - keepassx
       - docker
