@@ -35,6 +35,7 @@
       - plenv
       - perl-build
       - docker-compose
+      - git-secrets
     homebrew_cask_packages:
       - google-chrome
       - 1password
