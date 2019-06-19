@@ -36,6 +36,7 @@
       - perl-build
       - docker-compose
       - git-secrets
+      - highlight
     homebrew_cask_packages:
       - google-chrome
       - 1password
