@@ -7,6 +7,7 @@
     homebrew_taps:
       - caskroom/cask
       - caskroom/versions
+      - jesseduffield/lazydocker
     homebrew_packages:
       - zsh
       - git
@@ -37,6 +38,7 @@
       - docker-compose
       - git-secrets
       - highlight
+      - lazydocker
     homebrew_cask_packages:
       - google-chrome
       - 1password
