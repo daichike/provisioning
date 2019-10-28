@@ -42,6 +42,7 @@
       - yudai/gotty/gotty
       - lazydocker
       - anyenv
+      - highlight
     homebrew_cask_packages:
       - google-chrome
       - 1password
