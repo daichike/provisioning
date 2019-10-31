@@ -8,6 +8,7 @@
       - caskroom/cask
       - caskroom/versions
       - jesseduffield/lazydocker
+      - knqyf263/utern/utern
     homebrew_packages:
       - zsh
       - git
@@ -43,6 +44,7 @@
       - lazydocker
       - anyenv
       - highlight
+      - knqyf263/utern/utern
     homebrew_cask_packages:
       - google-chrome
       - 1password
