@@ -45,6 +45,7 @@
       - anyenv
       - highlight
       - knqyf263/utern/utern
+      - github/gh/gh
     homebrew_cask_packages:
       - google-chrome
       - 1password
